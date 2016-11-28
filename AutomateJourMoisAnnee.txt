@@ -1,0 +1,24 @@
+L'automate utilisé est un: AutomateJourMoisAnnee
+
+Validité des dates (format jj/mm/aaaa)
+
+Validité de "16/11/2016"
+	-->Cette date est valide
+
+Validité de "01/01/2000"
+	-->Cette date est valide
+
+Validité de "15/106/1994"
+	-->Cette date n'est pas valide
+
+Validité de "31/02/1664"
+	-->Cette date n'est pas valide
+
+Validité de "27/09/35421"
+	-->Cette date n'est pas valide
+
+Validité de "AAA"
+	-->Ce n'est pas valide
+
+Validité de ""
+	-->Ce n'est pas valide

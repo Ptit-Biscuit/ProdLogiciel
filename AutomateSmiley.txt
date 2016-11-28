@@ -1,0 +1,51 @@
+L'automate utilisé est un: AutomateSmiley
+
+Validité des smileys
+
+Validité de ":=)"
+etat en cours : E0
+etat: E0, carCourant: :
+etat suivant : E1
+etat: E1, carCourant: =
+etat suivant : E3
+etat: E3, carCourant: )
+etat suivant : E4
+	-->Ce smiley est valide
+
+Validité de ":-)"
+etat en cours : E0
+etat: E0, carCourant: :
+etat suivant : E1
+etat: E1, carCourant: -
+etat suivant : E3
+etat: E3, carCourant: )
+etat suivant : E4
+	-->Ce smiley est valide
+
+Validité de ";=)"
+etat en cours : E0
+etat: E0, carCourant: ;
+etat suivant : E2
+etat: E2, carCourant: =
+etat suivant : X
+	-->Ce smiley est invalide
+
+Validité de ";;)"
+etat en cours : E0
+etat: E0, carCourant: ;
+etat suivant : E2
+etat: E2, carCourant: ;
+etat suivant : X
+	-->Ce smiley est invalide
+
+Validité de "AAA"
+etat en cours : E0
+etat: E0, carCourant: A
+etat suivant : X
+	-->Ce n'est pas valide
+
+Validité de ""
+etat en cours : E0
+etat: E0, carCourant: X
+etat suivant : X
+	-->Ce n'est pas valide

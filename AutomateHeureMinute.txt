@@ -1,0 +1,61 @@
+L'automate utilisé est un: AutomateHeureMinute
+
+Validité des heures (format HH:MM)
+
+Validité de "13:46"
+etat en cours : E0
+etat: E0, carCourant: 1
+etat suivant : H1
+etat: H1, carCourant: 3
+etat suivant : H
+etat: H, carCourant: :
+etat suivant : M1
+etat: M1, carCourant: 4
+etat suivant : M2
+etat: M2, carCourant: 6
+etat suivant : M
+	-->Cette heure est valide
+
+Validité de "00:00"
+etat en cours : E0
+etat: E0, carCourant: 0
+etat suivant : H1
+etat: H1, carCourant: 0
+etat suivant : H
+etat: H, carCourant: :
+etat suivant : M1
+etat: M1, carCourant: 0
+etat suivant : M2
+etat: M2, carCourant: 0
+etat suivant : M
+	-->Cette heure est valide
+
+Validité de "19:76"
+etat en cours : E0
+etat: E0, carCourant: 1
+etat suivant : H1
+etat: H1, carCourant: 9
+etat suivant : H
+etat: H, carCourant: :
+etat suivant : M1
+etat: M1, carCourant: 7
+etat suivant : X
+	-->Cette heure n'est pas valide
+
+Validité de "33:46"
+etat en cours : E0
+etat: E0, carCourant: 3
+etat suivant : X
+	-->Cette heure n'est pas valide
+
+Validité de "AAA"
+etat en cours : E0
+etat: E0, carCourant: A
+etat suivant : X
+	-->Ce n'est pas valide
+
+Validité de ""
+etat en cours : E0
+etat: E0, carCourant: X
+etat suivant : X
+	-->Ce n'est pas valide
