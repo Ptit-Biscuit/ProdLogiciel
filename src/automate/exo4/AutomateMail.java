@@ -30,8 +30,4 @@ public class AutomateMail extends Automate implements Validable {
     public boolean simpleValidate(String string) {
         return false;
     }
-
-    public static void main(String[] args) {
-        new AutomateMail();
-    }
 }
