@@ -152,7 +152,7 @@ public class Automate {
         HashMap<Automate.Etat, Character> relation = new HashMap<>();
         relation.put(etat, action);
 
-        return this.transitions.getOrDefault(relation, new Automate.Etat("X"));
+        return this.transitions.getOrDefault(relation, null);
     }
 
     public List<Automate.Etat> getEtats() { return this.etats; }
@@ -240,21 +240,26 @@ public class Automate {
     public boolean validate(String string) {int i = 0;
 
         Automate.Etat etatC = this.getEtatInit();
-        System.out.println("etat en cours : " + etatC.getNom());
 
-        while (!etatC.getNom().equals(this.getEtatFinal().getNom())
+        String nameEtatC = etatC.getNom();
+        String etatFinal = this.getEtatFinal().getNom();
+
+        System.out.println("etat en cours : " + nameEtatC);
+
+        while (!nameEtatC.equals(etatFinal)
                 && this.etats.contains(etatC)) {
             char carCourantX = i >= string.length() ? 'X' : string.charAt(i);
 
-            System.out.println("etat: " + etatC.getNom() + ", carCourant: " + carCourantX);
+            System.out.println("etat: " + nameEtatC + ", carCourant: " + carCourantX);
 
             etatC = this.getEtatSuivant(etatC, carCourantX);
 
-            System.out.println("etat suivant : " + etatC.getNom());
+            if(etatC != null) System.out.println("etat suivant : " + etatC.getNom());
+            else System.out.println("etat invalide");
 
             i++;
         }
 
-        return etatC.getNom().equals(this.getEtatFinal().getNom());
+        return nameEtatC.equals(etatFinal);
     }
 }

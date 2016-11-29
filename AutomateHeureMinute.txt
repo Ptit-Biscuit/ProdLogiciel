@@ -6,56 +6,60 @@ Validité de "13:46"
 etat en cours : E0
 etat: E0, carCourant: 1
 etat suivant : H1
-etat: H1, carCourant: 3
+etat: E0, carCourant: 3
 etat suivant : H
-etat: H, carCourant: :
+etat: E0, carCourant: :
 etat suivant : M1
-etat: M1, carCourant: 4
+etat: E0, carCourant: 4
 etat suivant : M2
-etat: M2, carCourant: 6
+etat: E0, carCourant: 6
 etat suivant : M
-	-->Cette heure est valide
+etat: E0, carCourant: X
+etat invalide
+	-->Cette heure n'est pas valide
 
 Validité de "00:00"
 etat en cours : E0
 etat: E0, carCourant: 0
 etat suivant : H1
-etat: H1, carCourant: 0
+etat: E0, carCourant: 0
 etat suivant : H
-etat: H, carCourant: :
+etat: E0, carCourant: :
 etat suivant : M1
-etat: M1, carCourant: 0
+etat: E0, carCourant: 0
 etat suivant : M2
-etat: M2, carCourant: 0
+etat: E0, carCourant: 0
 etat suivant : M
-	-->Cette heure est valide
+etat: E0, carCourant: X
+etat invalide
+	-->Cette heure n'est pas valide
 
 Validité de "19:76"
 etat en cours : E0
 etat: E0, carCourant: 1
 etat suivant : H1
-etat: H1, carCourant: 9
+etat: E0, carCourant: 9
 etat suivant : H
-etat: H, carCourant: :
+etat: E0, carCourant: :
 etat suivant : M1
-etat: M1, carCourant: 7
-etat suivant : X
+etat: E0, carCourant: 7
+etat invalide
 	-->Cette heure n'est pas valide
 
 Validité de "33:46"
 etat en cours : E0
 etat: E0, carCourant: 3
-etat suivant : X
+etat invalide
 	-->Cette heure n'est pas valide
 
 Validité de "AAA"
 etat en cours : E0
 etat: E0, carCourant: A
-etat suivant : X
+etat invalide
 	-->Ce n'est pas valide
 
 Validité de ""
 etat en cours : E0
 etat: E0, carCourant: X
-etat suivant : X
+etat invalide
 	-->Ce n'est pas valide
