@@ -31,14 +31,20 @@ public class AutomateMail extends Automate implements Validable {
                 '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
         };
 
+        Character[] chars2 = new Character[] {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
+                'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y' ,'z',
+                'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R',
+                'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+        };
+
         this.addSameTransition(this.getEtatInit(), etats[1], chars);
         this.addSameTransition(etats[1], etats[1], chars);
         this.addTransition(etats[1], etats[2], '.');
         this.addSameTransition(etats[2], etats[3], chars);
         this.addSameTransition(etats[3], etats[3], chars);
         this.addTransition(etats[3], etats[4], '@');
-        this.addSameTransition(etats[4], this.getEtatFinal(), chars);
-        this.addSameTransition(this.getEtatFinal(), this.getEtatFinal(), chars);
+        this.addSameTransition(etats[4], etats[4], chars2);
+        this.addSameTransition(etats[4], this.getEtatFinal(), chars2);
         this.addTransition(this.getEtatFinal(), this.getEtatInit(), ';');
     }
 
@@ -48,7 +54,5 @@ public class AutomateMail extends Automate implements Validable {
     }
 
     @Override
-    public boolean simpleValidate(String string) {
-        return false;
-    }
+    public boolean simpleValidate(String string) { return false; }
 }

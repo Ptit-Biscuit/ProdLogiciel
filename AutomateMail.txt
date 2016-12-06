@@ -1,0 +1,120 @@
+L'automate utilisé est un: AutomateMail
+
+Validité des mail (format ***.***@*****)
+
+Validité de "mon.Mail1@monDomain"
+etat en cours : E0	etat final : E5
+etat suivant : E1	chaine lue : m
+etat suivant : E1	chaine lue : mo
+etat suivant : E1	chaine lue : mon
+etat suivant : E2	chaine lue : mon.
+etat suivant : E3	chaine lue : mon.M
+etat suivant : E3	chaine lue : mon.Ma
+etat suivant : E3	chaine lue : mon.Mai
+etat suivant : E3	chaine lue : mon.Mail
+etat suivant : E4	chaine lue : mon.Mail@
+etat suivant : E4	chaine lue : mon.Mail@m
+etat suivant : E4	chaine lue : mon.Mail@mo
+etat suivant : E4	chaine lue : mon.Mail@mon
+etat suivant : E4	chaine lue : mon.Mail@monD
+etat suivant : E4	chaine lue : mon.Mail@monDo
+etat suivant : E4	chaine lue : mon.Mail@monDom
+etat suivant : E4	chaine lue : mon.Mail@monDoma
+etat suivant : E4	chaine lue : mon.Mail@monDomai
+etat suivant : E4	chaine lue : mon.Mail@monDomain
+	-->Ce mail n'est pas valide
+
+Validité de "MAILTEST.MAIL@MONDOMAIN;Mailvalide.2@valider"
+etat en cours : E0	etat final : E5
+etat suivant : E1	chaine lue : M
+etat suivant : E1	chaine lue : MA
+etat suivant : E1	chaine lue : MAI
+etat suivant : E1	chaine lue : MAIL
+etat suivant : E1	chaine lue : MAILT
+etat suivant : E1	chaine lue : MAILTE
+etat suivant : E1	chaine lue : MAILTES
+etat suivant : E1	chaine lue : MAILTEST
+etat suivant : E2	chaine lue : MAILTEST.
+etat suivant : E3	chaine lue : MAILTEST.M
+etat suivant : E3	chaine lue : MAILTEST.MA
+etat suivant : E3	chaine lue : MAILTEST.MAI
+etat suivant : E3	chaine lue : MAILTEST.MAIL
+etat suivant : E4	chaine lue : MAILTEST.MAIL@
+etat suivant : E4	chaine lue : MAILTEST.MAIL@M
+etat suivant : E4	chaine lue : MAILTEST.MAIL@MO
+etat suivant : E4	chaine lue : MAILTEST.MAIL@MON
+etat suivant : E4	chaine lue : MAILTEST.MAIL@MOND
+etat suivant : E4	chaine lue : MAILTEST.MAIL@MONDO
+etat suivant : E4	chaine lue : MAILTEST.MAIL@MONDOM
+etat suivant : E4	chaine lue : MAILTEST.MAIL@MONDOMA
+etat suivant : E4	chaine lue : MAILTEST.MAIL@MONDOMAI
+etat suivant : E4	chaine lue : MAILTEST.MAIL@MONDOMAIN
+	-->Ce mail n'est pas valide
+
+Validité de "MailInvalide@invalide"
+etat en cours : E0	etat final : E5
+etat suivant : E1	chaine lue : M
+etat suivant : E1	chaine lue : Ma
+etat suivant : E1	chaine lue : Mai
+etat suivant : E1	chaine lue : Mail
+etat suivant : E1	chaine lue : MailI
+etat suivant : E1	chaine lue : MailIn
+etat suivant : E1	chaine lue : MailInv
+etat suivant : E1	chaine lue : MailInva
+etat suivant : E1	chaine lue : MailInval
+etat suivant : E1	chaine lue : MailInvali
+etat suivant : E1	chaine lue : MailInvalid
+etat suivant : E1	chaine lue : MailInvalide
+etat invalide
+	-->Ce mail n'est pas valide
+
+Validité de "AutreMail.Invalide;suivi.dunAutre.invalide@"
+etat en cours : E0	etat final : E5
+etat suivant : E1	chaine lue : A
+etat suivant : E1	chaine lue : Au
+etat suivant : E1	chaine lue : Aut
+etat suivant : E1	chaine lue : Autr
+etat suivant : E1	chaine lue : Autre
+etat suivant : E1	chaine lue : AutreM
+etat suivant : E1	chaine lue : AutreMa
+etat suivant : E1	chaine lue : AutreMai
+etat suivant : E1	chaine lue : AutreMail
+etat suivant : E2	chaine lue : AutreMail.
+etat suivant : E3	chaine lue : AutreMail.I
+etat suivant : E3	chaine lue : AutreMail.In
+etat suivant : E3	chaine lue : AutreMail.Inv
+etat suivant : E3	chaine lue : AutreMail.Inva
+etat suivant : E3	chaine lue : AutreMail.Inval
+etat suivant : E3	chaine lue : AutreMail.Invali
+etat suivant : E3	chaine lue : AutreMail.Invalid
+etat suivant : E3	chaine lue : AutreMail.Invalide
+	-->Ce mail n'est pas valide
+
+Validité de "ChaineInvalide"
+etat en cours : E0	etat final : E5
+etat suivant : E1	chaine lue : C
+etat suivant : E1	chaine lue : Ch
+etat suivant : E1	chaine lue : Cha
+etat suivant : E1	chaine lue : Chai
+etat suivant : E1	chaine lue : Chain
+etat suivant : E1	chaine lue : Chaine
+etat suivant : E1	chaine lue : ChaineI
+etat suivant : E1	chaine lue : ChaineIn
+etat suivant : E1	chaine lue : ChaineInv
+etat suivant : E1	chaine lue : ChaineInva
+etat suivant : E1	chaine lue : ChaineInval
+etat suivant : E1	chaine lue : ChaineInvali
+etat suivant : E1	chaine lue : ChaineInvalid
+etat suivant : E1	chaine lue : ChaineInvalide
+	-->Ce mail n'est pas valide
+
+Validité de "AAA"
+etat en cours : E0	etat final : E5
+etat suivant : E1	chaine lue : A
+etat suivant : E1	chaine lue : AA
+etat suivant : E1	chaine lue : AAA
+	-->Ce n'est pas valide
+
+Validité de ""
+etat en cours : E0	etat final : E5
+	-->Ce n'est pas valide

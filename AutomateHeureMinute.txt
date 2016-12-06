@@ -3,63 +3,41 @@ L'automate utilisé est un: AutomateHeureMinute
 Validité des heures (format HH:MM)
 
 Validité de "13:46"
-etat en cours : E0
-etat: E0, carCourant: 1
-etat suivant : H1
-etat: E0, carCourant: 3
-etat suivant : H
-etat: E0, carCourant: :
-etat suivant : M1
-etat: E0, carCourant: 4
-etat suivant : M2
-etat: E0, carCourant: 6
-etat suivant : M
-etat: E0, carCourant: X
-etat invalide
-	-->Cette heure n'est pas valide
+etat en cours : E0	etat final : M
+etat suivant : H1	chaine lue : 1
+etat suivant : H	chaine lue : 13
+etat suivant : M1	chaine lue : 13:
+etat suivant : M2	chaine lue : 13:4
+etat suivant : M	chaine lue : 13:46
+	-->Cette heure est valide
 
 Validité de "00:00"
-etat en cours : E0
-etat: E0, carCourant: 0
-etat suivant : H1
-etat: E0, carCourant: 0
-etat suivant : H
-etat: E0, carCourant: :
-etat suivant : M1
-etat: E0, carCourant: 0
-etat suivant : M2
-etat: E0, carCourant: 0
-etat suivant : M
-etat: E0, carCourant: X
-etat invalide
-	-->Cette heure n'est pas valide
+etat en cours : E0	etat final : M
+etat suivant : H1	chaine lue : 0
+etat suivant : H	chaine lue : 00
+etat suivant : M1	chaine lue : 00:
+etat suivant : M2	chaine lue : 00:0
+etat suivant : M	chaine lue : 00:00
+	-->Cette heure est valide
 
 Validité de "19:76"
-etat en cours : E0
-etat: E0, carCourant: 1
-etat suivant : H1
-etat: E0, carCourant: 9
-etat suivant : H
-etat: E0, carCourant: :
-etat suivant : M1
-etat: E0, carCourant: 7
+etat en cours : E0	etat final : M
+etat suivant : H1	chaine lue : 1
+etat suivant : H	chaine lue : 19
+etat suivant : M1	chaine lue : 19:
 etat invalide
 	-->Cette heure n'est pas valide
 
 Validité de "33:46"
-etat en cours : E0
-etat: E0, carCourant: 3
+etat en cours : E0	etat final : M
 etat invalide
 	-->Cette heure n'est pas valide
 
 Validité de "AAA"
-etat en cours : E0
-etat: E0, carCourant: A
+etat en cours : E0	etat final : M
 etat invalide
 	-->Ce n'est pas valide
 
 Validité de ""
-etat en cours : E0
-etat: E0, carCourant: X
-etat invalide
+etat en cours : E0	etat final : M
 	-->Ce n'est pas valide

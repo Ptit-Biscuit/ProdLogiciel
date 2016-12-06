@@ -3,93 +3,56 @@ L'automate utilisé est un: AutomateHeureMinuteSeconde
 Validité des heures (format HH:MM:SS)
 
 Validité de "13:46:00"
-etat en cours : E0
-etat: E0, carCourant: 1
-etat suivant : H1
-etat: E0, carCourant: 3
-etat suivant : H
-etat: E0, carCourant: :
-etat suivant : M1
-etat: E0, carCourant: 4
-etat suivant : M2
-etat: E0, carCourant: 6
-etat suivant : M
-etat: E0, carCourant: :
-etat suivant : S1
-etat: E0, carCourant: 0
-etat suivant : S2
-etat: E0, carCourant: 0
-etat suivant : S
-etat: E0, carCourant: X
-etat invalide
-	-->Cette heure n'est pas valide
+etat en cours : E0	etat final : S
+etat suivant : H1	chaine lue : 1
+etat suivant : H	chaine lue : 13
+etat suivant : M1	chaine lue : 13:
+etat suivant : M2	chaine lue : 13:4
+etat suivant : M	chaine lue : 13:46
+etat suivant : S1	chaine lue : 13:46:
+etat suivant : S2	chaine lue : 13:46:0
+etat suivant : S	chaine lue : 13:46:00
+	-->Cette heure est valide
 
 Validité de "00:00:59"
-etat en cours : E0
-etat: E0, carCourant: 0
-etat suivant : H1
-etat: E0, carCourant: 0
-etat suivant : H
-etat: E0, carCourant: :
-etat suivant : M1
-etat: E0, carCourant: 0
-etat suivant : M2
-etat: E0, carCourant: 0
-etat suivant : M
-etat: E0, carCourant: :
-etat suivant : S1
-etat: E0, carCourant: 5
-etat suivant : S2
-etat: E0, carCourant: 9
-etat suivant : S
-etat: E0, carCourant: X
-etat invalide
-	-->Cette heure n'est pas valide
+etat en cours : E0	etat final : S
+etat suivant : H1	chaine lue : 0
+etat suivant : H	chaine lue : 00
+etat suivant : M1	chaine lue : 00:
+etat suivant : M2	chaine lue : 00:0
+etat suivant : M	chaine lue : 00:00
+etat suivant : S1	chaine lue : 00:00:
+etat suivant : S2	chaine lue : 00:00:5
+etat suivant : S	chaine lue : 00:00:59
+	-->Cette heure est valide
 
 Validité de "12:34:94"
-etat en cours : E0
-etat: E0, carCourant: 1
-etat suivant : H1
-etat: E0, carCourant: 2
-etat suivant : H
-etat: E0, carCourant: :
-etat suivant : M1
-etat: E0, carCourant: 3
-etat suivant : M2
-etat: E0, carCourant: 4
-etat suivant : M
-etat: E0, carCourant: :
-etat suivant : S1
-etat: E0, carCourant: 9
+etat en cours : E0	etat final : S
+etat suivant : H1	chaine lue : 1
+etat suivant : H	chaine lue : 12
+etat suivant : M1	chaine lue : 12:
+etat suivant : M2	chaine lue : 12:3
+etat suivant : M	chaine lue : 12:34
+etat suivant : S1	chaine lue : 12:34:
 etat invalide
 	-->Cette heure n'est pas valide
 
 Validité de "21:46:715"
-etat en cours : E0
-etat: E0, carCourant: 2
-etat suivant : H2
-etat: E0, carCourant: 1
-etat suivant : H
-etat: E0, carCourant: :
-etat suivant : M1
-etat: E0, carCourant: 4
-etat suivant : M2
-etat: E0, carCourant: 6
-etat suivant : M
-etat: E0, carCourant: :
-etat suivant : S1
-etat: E0, carCourant: 7
+etat en cours : E0	etat final : S
+etat suivant : H2	chaine lue : 2
+etat suivant : H	chaine lue : 21
+etat suivant : M1	chaine lue : 21:
+etat suivant : M2	chaine lue : 21:4
+etat suivant : M	chaine lue : 21:46
+etat suivant : S1	chaine lue : 21:46:
 etat invalide
 	-->Cette heure n'est pas valide
 
 Validité de "AAA"
-etat en cours : E0
-etat: E0, carCourant: A
+etat en cours : E0	etat final : S
 etat invalide
 	-->Ce n'est pas valide
 
 Validité de ""
-etat en cours : E0
-etat: E0, carCourant: X
-etat invalide
+etat en cours : E0	etat final : S
 	-->Ce n'est pas valide

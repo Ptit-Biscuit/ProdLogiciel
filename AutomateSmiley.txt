@@ -3,53 +3,36 @@ L'automate utilisé est un: AutomateSmiley
 Validité des smileys
 
 Validité de ":=)"
-etat en cours : E0
-etat: E0, carCourant: :
-etat suivant : E1
-etat: E0, carCourant: =
-etat suivant : E3
-etat: E0, carCourant: )
-etat suivant : E4
-etat: E0, carCourant: X
-etat invalide
-	-->Ce smiley est invalide
+etat en cours : E0	etat final : E4
+etat suivant : E1	chaine lue : :
+etat suivant : E3	chaine lue : :=
+etat suivant : E4	chaine lue : :=)
+	-->Ce smiley est valide
 
 Validité de ":-)"
-etat en cours : E0
-etat: E0, carCourant: :
-etat suivant : E1
-etat: E0, carCourant: -
-etat suivant : E3
-etat: E0, carCourant: )
-etat suivant : E4
-etat: E0, carCourant: X
-etat invalide
-	-->Ce smiley est invalide
+etat en cours : E0	etat final : E4
+etat suivant : E1	chaine lue : :
+etat suivant : E3	chaine lue : :-
+etat suivant : E4	chaine lue : :-)
+	-->Ce smiley est valide
 
 Validité de ";=)"
-etat en cours : E0
-etat: E0, carCourant: ;
-etat suivant : E2
-etat: E0, carCourant: =
+etat en cours : E0	etat final : E4
+etat suivant : E2	chaine lue : ;
 etat invalide
 	-->Ce smiley est invalide
 
 Validité de ";;)"
-etat en cours : E0
-etat: E0, carCourant: ;
-etat suivant : E2
-etat: E0, carCourant: ;
+etat en cours : E0	etat final : E4
+etat suivant : E2	chaine lue : ;
 etat invalide
 	-->Ce smiley est invalide
 
 Validité de "AAA"
-etat en cours : E0
-etat: E0, carCourant: A
+etat en cours : E0	etat final : E4
 etat invalide
 	-->Ce n'est pas valide
 
 Validité de ""
-etat en cours : E0
-etat: E0, carCourant: X
-etat invalide
+etat en cours : E0	etat final : E4
 	-->Ce n'est pas valide

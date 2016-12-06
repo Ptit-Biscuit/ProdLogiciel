@@ -236,29 +236,29 @@ public class MonApplication {
         System.out.println("Validité des mail (format ***.***@*****)");
         System.out.println();
 
-        System.out.println("Validité de \"mon.Mail@monDomain\"");
-        if (automate.validate("mon.Mail@monDomain")) System.out.println("\t-->Cette date est valide");
-        else System.out.println("\t-->Cette date n'est pas valide");
+        System.out.println("Validité de \"mon.Mail1@monDomain\"");
+        if (automate.validate("mon.Mail@monDomain")) System.out.println("\t-->Ce mail est valide");
+        else System.out.println("\t-->Ce mail n'est pas valide");
 
         System.out.println();
-        System.out.println("Validité de \"MAILTEST.MAIL@MONDOMAIN\"");
-        if (automate.validate("MAILTEST.MAIL@MONDOMAIN")) System.out.println("\t-->Cette date est valide");
-        else System.out.println("\t-->Cette date n'est pas valide");
+        System.out.println("Validité de \"MAILTEST.MAIL@MONDOMAIN;Mailvalide.2@valider\"");
+        if (automate.validate("MAILTEST.MAIL@MONDOMAIN")) System.out.println("\t-->Ce mail est valide");
+        else System.out.println("\t-->Ce mail n'est pas valide");
 
         System.out.println();
         System.out.println("Validité de \"MailInvalide@invalide\"");
-        if (automate.validate("MailInvalide@invalide")) System.out.println("\t-->Cette date est valide");
-        else System.out.println("\t-->Cette date n'est pas valide");
+        if (automate.validate("MailInvalide@invalide")) System.out.println("\t-->Ce mail est valide");
+        else System.out.println("\t-->Ce mail n'est pas valide");
 
         System.out.println();
-        System.out.println("Validité de \"AutreMail.Invalide\"");
-        if (automate.validate("AutreMail.Invalide")) System.out.println("\t-->Cette date est valide");
-        else System.out.println("\t-->Cette date n'est pas valide");
+        System.out.println("Validité de \"AutreMail.Invalide;suivi.dunAutre.invalide@\"");
+        if (automate.validate("AutreMail.Invalide")) System.out.println("\t-->Ce mail est valide");
+        else System.out.println("\t-->Ce mail n'est pas valide");
 
         System.out.println();
         System.out.println("Validité de \"ChaineInvalide\"");
-        if (automate.validate("ChaineInvalide")) System.out.println("\t-->Cette date est valide");
-        else System.out.println("\t-->Cette date n'est pas valide");
+        if (automate.validate("ChaineInvalide")) System.out.println("\t-->Ce mail est valide");
+        else System.out.println("\t-->Ce mail n'est pas valide");
 
         System.out.println();
         System.out.println("Validité de \"AAA\"");

@@ -237,29 +237,36 @@ public class Automate {
      * @param string la string à valider
      * @return true si las tring est valide, false sinon
      */
-    public boolean validate(String string) {int i = 0;
+    public boolean validate(String string) {
+        int i = 0;
 
         Automate.Etat etatC = this.getEtatInit();
-
-        String nameEtatC = etatC.getNom();
         String etatFinal = this.getEtatFinal().getNom();
+        String chaine = "";
 
-        System.out.println("etat en cours : " + nameEtatC);
+        System.out.println("etat en cours : " + etatC.getNom() + "\tetat final : " + etatFinal);
 
-        while (!nameEtatC.equals(etatFinal)
+        while (!etatC.getNom().equals(etatFinal)
                 && this.etats.contains(etatC)) {
-            char carCourantX = i >= string.length() ? 'X' : string.charAt(i);
+            Character carCourantX;
 
-            System.out.println("etat: " + nameEtatC + ", carCourant: " + carCourantX);
+            if (i >= string.length()) break;
+            else carCourantX = string.charAt(i);
 
             etatC = this.getEtatSuivant(etatC, carCourantX);
 
-            if(etatC != null) System.out.println("etat suivant : " + etatC.getNom());
-            else System.out.println("etat invalide");
+            if(etatC != null) {
+                chaine += carCourantX;
+                System.out.println("etat suivant : " + etatC.getNom() + "\tchaine lue : " + chaine);
+            }
+            else {
+                System.out.println("etat invalide");
+                return false;
+            }
 
             i++;
         }
 
-        return nameEtatC.equals(etatFinal);
+        return etatC.getNom().equals(etatFinal);
     }
 }
