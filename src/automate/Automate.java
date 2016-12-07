@@ -251,22 +251,23 @@ public class Automate {
 
         System.out.println("etat en cours : " + etatC.getNom() + "\tetat final : " + etatFinal);
 
-        while (!etatC.getNom().equals(etatFinal)
-                && this.etats.contains(etatC)) {
+        while (this.etats.contains(etatC)) {
             Character carCourantX;
 
             if (i >= string.length()) break;
-            else carCourantX = string.charAt(i);
-
-            etatC = this.getEtatSuivant(etatC, carCourantX);
-
-            if(etatC != null) {
-                chaine += carCourantX;
-                System.out.println("etat suivant : " + etatC.getNom() + "\tchaine lue : " + chaine);
-            }
             else {
-                System.out.println("etat invalide");
-                return false;
+                carCourantX = string.charAt(i);
+
+                etatC = this.getEtatSuivant(etatC, carCourantX);
+
+                if (etatC != null) {
+                    chaine += carCourantX;
+                    System.out.println("etat suivant : " + etatC.getNom() + "\tchaine lue : " + chaine);
+                }
+                else {
+                    System.out.println("etat invalide");
+                    return false;
+                }
             }
 
             i++;

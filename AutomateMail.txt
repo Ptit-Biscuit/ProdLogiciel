@@ -12,8 +12,39 @@ etat suivant : E3	chaine lue : mon.M
 etat suivant : E3	chaine lue : mon.Ma
 etat suivant : E3	chaine lue : mon.Mai
 etat suivant : E3	chaine lue : mon.Mail
-etat suivant : E4	chaine lue : mon.Mail@
-etat suivant : E5	chaine lue : mon.Mail@m
+etat suivant : E3	chaine lue : mon.Mail1
+etat suivant : E4	chaine lue : mon.Mail1@
+etat suivant : E5	chaine lue : mon.Mail1@m
+etat suivant : E5	chaine lue : mon.Mail1@mo
+etat suivant : E5	chaine lue : mon.Mail1@mon
+etat suivant : E5	chaine lue : mon.Mail1@monD
+etat suivant : E5	chaine lue : mon.Mail1@monDo
+etat suivant : E5	chaine lue : mon.Mail1@monDom
+etat suivant : E5	chaine lue : mon.Mail1@monDoma
+etat suivant : E5	chaine lue : mon.Mail1@monDomai
+etat suivant : E5	chaine lue : mon.Mail1@monDomain
+	-->Ce mail est valide
+
+Validité de "2451.456454@domain"
+etat en cours : E0	etat final : E5
+etat suivant : E1	chaine lue : 2
+etat suivant : E1	chaine lue : 24
+etat suivant : E1	chaine lue : 245
+etat suivant : E1	chaine lue : 2451
+etat suivant : E2	chaine lue : 2451.
+etat suivant : E3	chaine lue : 2451.4
+etat suivant : E3	chaine lue : 2451.45
+etat suivant : E3	chaine lue : 2451.456
+etat suivant : E3	chaine lue : 2451.4564
+etat suivant : E3	chaine lue : 2451.45645
+etat suivant : E3	chaine lue : 2451.456454
+etat suivant : E4	chaine lue : 2451.456454@
+etat suivant : E5	chaine lue : 2451.456454@d
+etat suivant : E5	chaine lue : 2451.456454@do
+etat suivant : E5	chaine lue : 2451.456454@dom
+etat suivant : E5	chaine lue : 2451.456454@doma
+etat suivant : E5	chaine lue : 2451.456454@domai
+etat suivant : E5	chaine lue : 2451.456454@domain
 	-->Ce mail est valide
 
 Validité de "MAILTEST.MAIL@MONDOMAIN;Mailvalide.2@valider"
@@ -33,6 +64,35 @@ etat suivant : E3	chaine lue : MAILTEST.MAI
 etat suivant : E3	chaine lue : MAILTEST.MAIL
 etat suivant : E4	chaine lue : MAILTEST.MAIL@
 etat suivant : E5	chaine lue : MAILTEST.MAIL@M
+etat suivant : E5	chaine lue : MAILTEST.MAIL@MO
+etat suivant : E5	chaine lue : MAILTEST.MAIL@MON
+etat suivant : E5	chaine lue : MAILTEST.MAIL@MOND
+etat suivant : E5	chaine lue : MAILTEST.MAIL@MONDO
+etat suivant : E5	chaine lue : MAILTEST.MAIL@MONDOM
+etat suivant : E5	chaine lue : MAILTEST.MAIL@MONDOMA
+etat suivant : E5	chaine lue : MAILTEST.MAIL@MONDOMAI
+etat suivant : E5	chaine lue : MAILTEST.MAIL@MONDOMAIN
+etat suivant : E0	chaine lue : MAILTEST.MAIL@MONDOMAIN;
+etat suivant : E1	chaine lue : MAILTEST.MAIL@MONDOMAIN;M
+etat suivant : E1	chaine lue : MAILTEST.MAIL@MONDOMAIN;Ma
+etat suivant : E1	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mai
+etat suivant : E1	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mail
+etat suivant : E1	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailv
+etat suivant : E1	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailva
+etat suivant : E1	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailval
+etat suivant : E1	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailvali
+etat suivant : E1	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailvalid
+etat suivant : E1	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailvalide
+etat suivant : E2	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailvalide.
+etat suivant : E3	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailvalide.2
+etat suivant : E4	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailvalide.2@
+etat suivant : E5	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailvalide.2@v
+etat suivant : E5	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailvalide.2@va
+etat suivant : E5	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailvalide.2@val
+etat suivant : E5	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailvalide.2@vali
+etat suivant : E5	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailvalide.2@valid
+etat suivant : E5	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailvalide.2@valide
+etat suivant : E5	chaine lue : MAILTEST.MAIL@MONDOMAIN;Mailvalide.2@valider
 	-->Ce mail est valide
 
 Validité de "MailInvalide@invalide"
@@ -72,6 +132,7 @@ etat suivant : E3	chaine lue : AutreMail.Inval
 etat suivant : E3	chaine lue : AutreMail.Invali
 etat suivant : E3	chaine lue : AutreMail.Invalid
 etat suivant : E3	chaine lue : AutreMail.Invalide
+etat invalide
 	-->Ce mail n'est pas valide
 
 Validité de "ChaineInvalide"

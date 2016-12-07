@@ -46,6 +46,7 @@ public class AutomateMail extends Automate {
         System.err.println(this.addSameTransition(etats[4], this.getEtatFinal(), chars2));
         System.err.println(this.addSameTransition(this.getEtatFinal(), this.getEtatFinal(), chars2));
         System.err.println(this.addTransition(this.getEtatFinal(), this.getEtatInit(), ';'));
+        System.err.println(this.addTransition(null, this.getEtatInit(), ';'));
     }
 
 

@@ -237,12 +237,17 @@ public class MonApplication {
         System.out.println();
 
         System.out.println("Validité de \"mon.Mail1@monDomain\"");
-        if (automate.validate("mon.Mail@monDomain")) System.out.println("\t-->Ce mail est valide");
+        if (automate.validate("mon.Mail1@monDomain")) System.out.println("\t-->Ce mail est valide");
+        else System.out.println("\t-->Ce mail n'est pas valide");
+
+        System.out.println();
+        System.out.println("Validité de \"2451.456454@domain\"");
+        if (automate.validate("2451.456454@domain")) System.out.println("\t-->Ce mail est valide");
         else System.out.println("\t-->Ce mail n'est pas valide");
 
         System.out.println();
         System.out.println("Validité de \"MAILTEST.MAIL@MONDOMAIN;Mailvalide.2@valider\"");
-        if (automate.validate("MAILTEST.MAIL@MONDOMAIN")) System.out.println("\t-->Ce mail est valide");
+        if (automate.validate("MAILTEST.MAIL@MONDOMAIN;Mailvalide.2@valider")) System.out.println("\t-->Ce mail est valide");
         else System.out.println("\t-->Ce mail n'est pas valide");
 
         System.out.println();
@@ -252,7 +257,7 @@ public class MonApplication {
 
         System.out.println();
         System.out.println("Validité de \"AutreMail.Invalide;suivi.dunAutre.invalide@\"");
-        if (automate.validate("AutreMail.Invalide")) System.out.println("\t-->Ce mail est valide");
+        if (automate.validate("AutreMail.Invalide;suivi.dunAutre.invalide@")) System.out.println("\t-->Ce mail est valide");
         else System.out.println("\t-->Ce mail n'est pas valide");
 
         System.out.println();
