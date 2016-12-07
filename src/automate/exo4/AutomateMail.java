@@ -10,7 +10,7 @@ import java.util.HashMap;
 /**
  * Created by E155939Z on 23/11/16.
  */
-public class AutomateMail extends Automate implements Validable {
+public class AutomateMail extends Automate {
 
     public AutomateMail() {
         Etat[] etats = new Etat[] {
@@ -37,22 +37,20 @@ public class AutomateMail extends Automate implements Validable {
                 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
         };
 
-        this.addSameTransition(this.getEtatInit(), etats[1], chars);
-        this.addSameTransition(etats[1], etats[1], chars);
-        this.addTransition(etats[1], etats[2], '.');
-        this.addSameTransition(etats[2], etats[3], chars);
-        this.addSameTransition(etats[3], etats[3], chars);
-        this.addTransition(etats[3], etats[4], '@');
-        this.addSameTransition(etats[4], etats[4], chars2);
-        this.addSameTransition(etats[4], this.getEtatFinal(), chars2);
-        this.addTransition(this.getEtatFinal(), this.getEtatInit(), ';');
+        System.err.println(this.addSameTransition(this.getEtatInit(), etats[1], chars));
+        System.err.println(this.addSameTransition(etats[1], etats[1], chars));
+        System.err.println(this.addTransition(etats[1], etats[2], '.'));
+        System.err.println(this.addSameTransition(etats[2], etats[3], chars));
+        System.err.println(this.addSameTransition(etats[3], etats[3], chars));
+        System.err.println(this.addTransition(etats[3], etats[4], '@'));
+        System.err.println(this.addSameTransition(etats[4], this.getEtatFinal(), chars2));
+        System.err.println(this.addSameTransition(this.getEtatFinal(), this.getEtatFinal(), chars2));
+        System.err.println(this.addTransition(this.getEtatFinal(), this.getEtatInit(), ';'));
     }
 
-    @Override
-    public HashMap<HashMap<String, Character>, String> delta() {
-        return null;
-    }
 
-    @Override
-    public boolean simpleValidate(String string) { return false; }
+
+    public static void main(String[] args) {
+        Automate mail = new AutomateMail();
+    }
 }

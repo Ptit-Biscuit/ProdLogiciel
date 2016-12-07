@@ -13,16 +13,8 @@ etat suivant : E3	chaine lue : mon.Ma
 etat suivant : E3	chaine lue : mon.Mai
 etat suivant : E3	chaine lue : mon.Mail
 etat suivant : E4	chaine lue : mon.Mail@
-etat suivant : E4	chaine lue : mon.Mail@m
-etat suivant : E4	chaine lue : mon.Mail@mo
-etat suivant : E4	chaine lue : mon.Mail@mon
-etat suivant : E4	chaine lue : mon.Mail@monD
-etat suivant : E4	chaine lue : mon.Mail@monDo
-etat suivant : E4	chaine lue : mon.Mail@monDom
-etat suivant : E4	chaine lue : mon.Mail@monDoma
-etat suivant : E4	chaine lue : mon.Mail@monDomai
-etat suivant : E4	chaine lue : mon.Mail@monDomain
-	-->Ce mail n'est pas valide
+etat suivant : E5	chaine lue : mon.Mail@m
+	-->Ce mail est valide
 
 Validité de "MAILTEST.MAIL@MONDOMAIN;Mailvalide.2@valider"
 etat en cours : E0	etat final : E5
@@ -40,16 +32,8 @@ etat suivant : E3	chaine lue : MAILTEST.MA
 etat suivant : E3	chaine lue : MAILTEST.MAI
 etat suivant : E3	chaine lue : MAILTEST.MAIL
 etat suivant : E4	chaine lue : MAILTEST.MAIL@
-etat suivant : E4	chaine lue : MAILTEST.MAIL@M
-etat suivant : E4	chaine lue : MAILTEST.MAIL@MO
-etat suivant : E4	chaine lue : MAILTEST.MAIL@MON
-etat suivant : E4	chaine lue : MAILTEST.MAIL@MOND
-etat suivant : E4	chaine lue : MAILTEST.MAIL@MONDO
-etat suivant : E4	chaine lue : MAILTEST.MAIL@MONDOM
-etat suivant : E4	chaine lue : MAILTEST.MAIL@MONDOMA
-etat suivant : E4	chaine lue : MAILTEST.MAIL@MONDOMAI
-etat suivant : E4	chaine lue : MAILTEST.MAIL@MONDOMAIN
-	-->Ce mail n'est pas valide
+etat suivant : E5	chaine lue : MAILTEST.MAIL@M
+	-->Ce mail est valide
 
 Validité de "MailInvalide@invalide"
 etat en cours : E0	etat final : E5

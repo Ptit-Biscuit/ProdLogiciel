@@ -19,19 +19,12 @@ public class AutomateFTP extends Automate implements Validable {
 
         this.addEtatsInitAndFinal(etats[0], etats[0]);
 
-        Character[] chars = new Character[] {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',
-                'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y' ,'z',
-                'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R',
-                'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z',
-                '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'
-        };
-
-        this.addSameTransition(this.getEtatInit(), etats[1], chars);
-        this.addSameTransition(etats[1], etats[1], chars);
-        this.addSameTransition(etats[1], etats[2], chars);
-        this.addSameTransition(etats[2], etats[2], chars);
-        this.addSameTransition(etats[2], etats[2], chars);
-        this.addSameTransition(etats[2], this.getEtatFinal(), chars);
+        this.addSameTransition(this.getEtatInit(), etats[1], ' ');
+        this.addSameTransition(etats[1], etats[1], ' ');
+        this.addSameTransition(etats[1], etats[2], ' ');
+        this.addSameTransition(etats[2], etats[2], ' ');
+        this.addSameTransition(etats[2], etats[2], ' ');
+        this.addSameTransition(etats[2], this.getEtatFinal(), ' ');
     }
 
     @Override

@@ -7,7 +7,7 @@ import java.util.Set;
 
 /**
  * Created by Brebion Vincent on 16/11/16
- * @version 1.0
+ * @version 3.2
  * @since 1.0
  */
 public class Automate {
@@ -174,6 +174,11 @@ public class Automate {
         if(!this.etats.contains(etatArr))
             this.etats.add(etatArr);
 
+        for (HashMap<Etat, Character> key : this.transitions.keySet()) {
+            if (key.equals(relation))
+                System.err.println(this.transitions.get(key).getNom() + "\n");
+        }
+
         return this.transitions.putIfAbsent(relation, etatArr) == null;
     }
 
@@ -235,7 +240,7 @@ public class Automate {
     /**
      * Méthode validant la srting passée en paramètre
      * @param string la string à valider
-     * @return true si las tring est valide, false sinon
+     * @return true si la string est valide, false sinon
      */
     public boolean validate(String string) {
         int i = 0;
