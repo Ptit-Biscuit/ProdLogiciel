@@ -37,16 +37,16 @@ public class AutomateMail extends Automate {
                 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
         };
 
-        System.err.println(this.addSameTransition(this.getEtatInit(), etats[1], chars));
-        System.err.println(this.addSameTransition(etats[1], etats[1], chars));
-        System.err.println(this.addTransition(etats[1], etats[2], '.'));
-        System.err.println(this.addSameTransition(etats[2], etats[3], chars));
-        System.err.println(this.addSameTransition(etats[3], etats[3], chars));
-        System.err.println(this.addTransition(etats[3], etats[4], '@'));
-        System.err.println(this.addSameTransition(etats[4], this.getEtatFinal(), chars2));
-        System.err.println(this.addSameTransition(this.getEtatFinal(), this.getEtatFinal(), chars2));
-        System.err.println(this.addTransition(this.getEtatFinal(), this.getEtatInit(), ';'));
-        System.err.println(this.addTransition(null, this.getEtatInit(), ';'));
+        this.addSameTransition(this.getEtatInit(), etats[1], chars);
+        this.addSameTransition(etats[1], etats[1], chars);
+        this.addTransition(etats[1], etats[2], '.');
+        this.addSameTransition(etats[2], etats[3], chars);
+        this.addSameTransition(etats[3], etats[3], chars);
+        this.addTransition(etats[3], etats[4], '@');
+        this.addSameTransition(etats[4], this.getEtatFinal(), chars2);
+        this.addSameTransition(this.getEtatFinal(), this.getEtatFinal(), chars2);
+        this.addTransition(this.getEtatFinal(), this.getEtatInit(), ';');
+        this.addTransition(null, this.getEtatInit(), ';');
     }
 
 
