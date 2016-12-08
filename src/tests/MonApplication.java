@@ -332,11 +332,11 @@ public class MonApplication {
     }
 
     public static void main(String[] args) {
-        /*validateHeureMinute();
+        validateHeureMinute();
         validateSmiley();
         validateHeureMinuteSeconde();
         validateDate();
-        validateMail();*/
+        validateMail();
         validateFTP();
     }
 }
