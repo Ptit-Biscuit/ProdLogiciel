@@ -7,6 +7,7 @@ import automate.exo2.AutomateSmiley;
 import automate.exo3.AutomateHeureMinuteSeconde;
 import automate.exo3.AutomateJourMoisAnnee;
 import automate.exo4.AutomateMail;
+import automate.exoFTP.AutomateFTP;
 
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
@@ -276,11 +277,66 @@ public class MonApplication {
         else System.out.println("\t-->Ce n'est pas valide");
     }
 
+    public static void validateFTP() {
+        Automate automate = new AutomateFTP();
+        String automateUtilisé = automate.getClass().getSimpleName();
+
+        /*
+         * Redirection de la sortie standard
+         * -> Création d'un fichier par automate
+         */
+        try {
+            System.setOut(new PrintStream(automateUtilisé + ".txt"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        System.out.println("L'automate utilisé est un: " + automateUtilisé);
+
+        System.out.println();
+        System.out.println("Validité d'une simulation pour un FTP");
+        System.out.println();
+
+        System.out.println("Validité de \"o1iiiiiiiipiipc\"");
+        if (automate.validate("o1iiiiiiiipiipc")) System.out.println("\t-->Cette simulation est valide");
+        else System.out.println("\t-->Cette simulation n'est pas valide");
+
+        System.out.println();
+        System.out.println("Validité de \"o001ipc\"");
+        if (automate.validate("o001ipc")) System.out.println("\t-->Cette simulation est valide");
+        else System.out.println("\t-->Cette simulation n'est pas valide");
+
+        System.out.println();
+        System.out.println("Validité de \"o1iipiiipco1iiiipc\"");
+        if (automate.validate("o1iipiiipco1iiiipc")) System.out.println("\t-->Cette simulation est valide");
+        else System.out.println("\t-->Cette simulation n'est pas valide");
+
+        System.out.println();
+        System.out.println("Validité de \"iiiii0co\"");
+        if (automate.validate("iiiii0co")) System.out.println("\t-->Cette simulation est valide");
+        else System.out.println("\t-->Cette simulation n'est pas valide");
+
+        System.out.println();
+        System.out.println("Validité de \"co01pco1iiiip\"");
+        if (automate.validate("co01pco1iiiip")) System.out.println("\t-->Cette simulation est valide");
+        else System.out.println("\t-->Cette simulation n'est pas valide");
+
+        System.out.println();
+        System.out.println("Validité de \"AAA\"");
+        if (automate.validate("AAA")) System.out.println("\t-->C'est valide");
+        else System.out.println("\t-->Ce n'est pas valide");
+
+        System.out.println();
+        System.out.println("Validité de \"\"");
+        if (automate.validate("")) System.out.println("\t-->C'est valide");
+        else System.out.println("\t-->Ce n'est pas valide");
+    }
+
     public static void main(String[] args) {
-        validateHeureMinute();
+        /*validateHeureMinute();
         validateSmiley();
         validateHeureMinuteSeconde();
         validateDate();
-        validateMail();
+        validateMail();*/
+        validateFTP();
     }
 }

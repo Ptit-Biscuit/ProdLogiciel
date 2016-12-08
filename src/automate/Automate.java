@@ -238,7 +238,7 @@ public class Automate {
     public HashMap<HashMap<Etat, Character>, Etat> getTransitions() { return this.transitions; }
 
     /**
-     * Méthode validant la srting passée en paramètre
+     * Méthode validant la string passée en paramètre
      * @param string la string à valider
      * @return true si la string est valide, false sinon
      */

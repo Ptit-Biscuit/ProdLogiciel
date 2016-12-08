@@ -1,0 +1,74 @@
+L'automate utilisé est un: AutomateFTP
+
+Validité d'une simulation pour un FTP
+
+Validité de "o1iiiiiiiipiipc"
+etat en cours : E0	etat final : E0
+etat suivant : E1	chaine lue : o
+etat suivant : E2	chaine lue : o1
+etat suivant : E2	chaine lue : o1i
+etat suivant : E2	chaine lue : o1ii
+etat suivant : E2	chaine lue : o1iii
+etat suivant : E2	chaine lue : o1iiii
+etat suivant : E2	chaine lue : o1iiiii
+etat suivant : E2	chaine lue : o1iiiiii
+etat suivant : E2	chaine lue : o1iiiiiii
+etat suivant : E2	chaine lue : o1iiiiiiii
+etat suivant : E2	chaine lue : o1iiiiiiiip
+etat suivant : E2	chaine lue : o1iiiiiiiipi
+etat suivant : E2	chaine lue : o1iiiiiiiipii
+etat suivant : E2	chaine lue : o1iiiiiiiipiip
+etat suivant : E0	chaine lue : o1iiiiiiiipiipc
+	-->Cette simulation est valide
+
+Validité de "o001ipc"
+etat en cours : E0	etat final : E0
+etat suivant : E1	chaine lue : o
+etat suivant : E1	chaine lue : o0
+etat suivant : E1	chaine lue : o00
+etat suivant : E2	chaine lue : o001
+etat suivant : E2	chaine lue : o001i
+etat suivant : E2	chaine lue : o001ip
+etat suivant : E0	chaine lue : o001ipc
+	-->Cette simulation est valide
+
+Validité de "o1iipiiipco1iiiipc"
+etat en cours : E0	etat final : E0
+etat suivant : E1	chaine lue : o
+etat suivant : E2	chaine lue : o1
+etat suivant : E2	chaine lue : o1i
+etat suivant : E2	chaine lue : o1ii
+etat suivant : E2	chaine lue : o1iip
+etat suivant : E2	chaine lue : o1iipi
+etat suivant : E2	chaine lue : o1iipii
+etat suivant : E2	chaine lue : o1iipiii
+etat suivant : E2	chaine lue : o1iipiiip
+etat suivant : E0	chaine lue : o1iipiiipc
+etat suivant : E1	chaine lue : o1iipiiipco
+etat suivant : E2	chaine lue : o1iipiiipco1
+etat suivant : E2	chaine lue : o1iipiiipco1i
+etat suivant : E2	chaine lue : o1iipiiipco1ii
+etat suivant : E2	chaine lue : o1iipiiipco1iii
+etat suivant : E2	chaine lue : o1iipiiipco1iiii
+etat suivant : E2	chaine lue : o1iipiiipco1iiiip
+etat suivant : E0	chaine lue : o1iipiiipco1iiiipc
+	-->Cette simulation est valide
+
+Validité de "iiiii0co"
+etat en cours : E0	etat final : E0
+etat invalide
+	-->Cette simulation n'est pas valide
+
+Validité de "co01pco1iiiip"
+etat en cours : E0	etat final : E0
+etat invalide
+	-->Cette simulation n'est pas valide
+
+Validité de "AAA"
+etat en cours : E0	etat final : E0
+etat invalide
+	-->Ce n'est pas valide
+
+Validité de ""
+etat en cours : E0	etat final : E0
+	-->C'est valide
